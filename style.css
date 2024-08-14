@@ -1,0 +1,57 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Courier, monospace;
+}
+
+body{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100dvh;
+     background-color: rgb(9, 32, 66);
+     color: #ddd;
+     overflow: hidden;
+}
+
+h1{
+     font-size: 1.7rem;
+     font-weight: 500;
+}
+
+.btn{
+     font-size: 1.1rem;
+     padding: 4px 7px;
+     background-color: rgb(13, 102, 117);
+     border: 0;
+     color: #eee;
+     border-radius: 8px;
+     cursor: pointer;
+     transition: scale 0.3s ease;
+}
+
+.btn:hover{
+     scale: 1.1;
+}
+
+.grid{
+     margin: auto;
+}
+
+.grid tr td{
+     border: 1px solid #fff;
+     background-color: #999;
+     width: 25px;
+     height: 25px;
+     text-align: center;
+}
+
+.grid tr td.active{
+     background-color: #333;
+}
+
+.grid tr td.mine{
+     background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg"><text y="20" font-size="20">💣</text></svg>');
+}
